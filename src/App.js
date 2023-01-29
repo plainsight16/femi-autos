@@ -12,6 +12,8 @@ import Navbar from './components/navbar';
 
 import {Cart, Shop} from "./pages"
 
+import "./App.css";
+
 const App = () => {
   const router = createBrowserRouter(
     createRoutesFromElements(
