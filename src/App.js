@@ -13,6 +13,7 @@ import Navbar from './components/navbar';
 import {Cart, Shop} from "./pages"
 
 import "./App.css";
+import { ShopContextProvider } from './context/shop-context';
 
 const App = () => {
   const router = createBrowserRouter(
@@ -25,7 +26,9 @@ const App = () => {
   )
   return (
     <div className="App">
-      <RouterProvider router={router}/>
+      <ShopContextProvider>
+        <RouterProvider router={router}/>
+      </ShopContextProvider>
     </div>
   )
 }
