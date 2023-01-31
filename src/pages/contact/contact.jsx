@@ -28,7 +28,7 @@ const Contact = () => {
 
                 <div className="input--group">
                   <label>Subject</label>
-                  <input type="text" placeholder="Enter message" />
+                  <input type="text" placeholder="Enter subject" />
                 </div>
               </div>
 
