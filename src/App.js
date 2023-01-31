@@ -10,7 +10,7 @@ import {
 
 import Navbar from './components/navbar';
 
-import {Cart, Shop} from "./pages"
+import {Cart, Shop, Contact} from "./pages"
 
 import "./App.css";
 import { ShopContextProvider } from './context/shop-context';
@@ -21,6 +21,7 @@ const App = () => {
       <Route path="/" element={<Root />}>
         <Route index element={<Shop />}/>
         <Route path="/cart" element={<Cart />} />
+        <Route path="/contact" element={<Contact />} />
       </Route>
     )
   )
